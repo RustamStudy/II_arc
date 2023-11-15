@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Предсказание по качеству продукции</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Исходные данные</h1>
+    <h2>Параметры продукции</h2>
+        <div class="buttonContainer">
+            <p>Продукция</p>
+            <select id = "artList"></select>
+        </div>
+    <h2>Параметры среды</h2>
+        <div class="buttonContainer">
+            <p>Температура в помещении</p>
+            <input type="text" id = "room_t">
+        </div>
+        <div class="buttonContainer">
+            <p>Влажность в помещении</p>
+            <input type="text" id = "room_h">
+        </div>
+    <h2>Параметры оборудования</h2>
+        <div class="buttonContainer">
+            <p>Температура пара</p>
+            <input type="text" id = "machin_t">
+        </div>
+        <div class="buttonContainer">
+            <p>Давление в системе</p>
+            <input type="text"id = "machin_p">
+        </div>
+
+    <div class="buttonContainer">
+        <button id="parameterGenerate">Сгенерировать случайный набор параметров</button>
+    </div>
+    <br/>
+    <br/>
+    <div class="buttonContainer">
+        <button id="getPredict">Произвести расчет</button>
+    </div>
+
+    <script src="./const.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
